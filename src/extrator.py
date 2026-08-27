@@ -59,8 +59,6 @@ def extrair_dxf_para_json(caminho_arquivo, caminho_saida_json):
                     
         print(f"Total bruto extraído: {len(dados_brutos)} linhas.")
         
-        # --- A MÁGICA DO FILTRO E EXPORTAÇÃO COMEÇA AQUI ---
-        
         # Usando 'List Comprehension' do Python para filtrar rápido
         # Mantemos a linha se a camada dela (ou do bloco de onde ela veio) estiver na nossa lista alvo
         dados_filtrados = [
@@ -72,7 +70,7 @@ def extrair_dxf_para_json(caminho_arquivo, caminho_saida_json):
         
         # Gravando no arquivo JSON
         with open(caminho_saida_json, 'w', encoding='utf-8') as arquivo_json:
-            # indent=4 deixa o JSON formatado e bonito para leitura humana
+            # indent=4 deixa o JSON formatado e bonito para leitura
             json.dump(dados_filtrados, arquivo_json, indent=4, ensure_ascii=False)
             
         print(f"Sucesso! Arquivo JSON gerado em: {caminho_saida_json}")

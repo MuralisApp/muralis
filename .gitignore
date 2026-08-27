@@ -52,5 +52,5 @@ Thumbs.db
 # 1. Ignora todos os arquivos DXF por padrão (para não pesar o repo)
 *.dxf
 
-# 2. Abre uma exceção APENAS para o seu arquivo de exemplo (substitua pelo nome real)
+# 2. Abre uma exceção APENAS para o arquivo de exemplo
 !data/entrada/teste.dxf

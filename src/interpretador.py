@@ -20,16 +20,16 @@ def visualizar_grafo(G):
     # Ajustamos os parâmetros visuais para ficar fácil de debugar
     nx.draw(
         G, 
-        pos=posicoes,          # A MÁGICA ESTÁ AQUI: Trava os nós nas posições reais!
-        node_size=15,          # Tamanho da "bolinha" (vértice). Deixe pequeno.
+        pos=posicoes,          # Trava os nós nas posições reais
+        node_size=15,          # Tamanho da "bolinha" (vértice).
         node_color="red",      # Vértices em vermelho
         edge_color="blue",     # Paredes em azul
         width=1.5,             # Espessura das paredes
-        with_labels=False      # Se True, imprime o ID do nó (fica ilegível em plantas grandes)
+        with_labels=False      # Se True, imprime o ID do nó
     )
 
     # 4. Ajustar proporção dos eixos para 1:1
-    # Isso impede que a planta fique "esticada" se a janela for retangular
+    # Isso impede que a planta fique esticada se a janela for retangular
     plt.axis('equal') 
     
     # 5. Exibir a janela na tela
