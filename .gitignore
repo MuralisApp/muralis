@@ -1,0 +1,56 @@
+# =========================
+# Ignorar arquivos do Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.env
+.venv
+venv/
+
+# =========================
+# Ignorar arquivos temporários do SO e IDEs
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Ignorar arquivos temporários de CAD e Lock
+# =========================
+*.~lock.*
+*.~lock.*#
+*.dxf#
+*.bak
+*.bck
+*.err
+*.tmp
+
+# =========================
+# Regras para os arquivos DXF
+# =========================
+# 1. Ignora todos os arquivos DXF por padrão (para não pesar o repo)
+*.dxf
+
+# 2. Abre uma exceção APENAS para o seu arquivo de exemplo (substitua pelo nome real)
+!data/entrada/teste.dxf
